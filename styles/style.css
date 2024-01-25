@@ -110,13 +110,11 @@ ol {
 .content__video-card-description-container {
   display: flex;
   flex-direction: column;
-  gap: 6px;
   max-width: 200px;
-  padding: 2px 0;
 }
 
-.content__card-link {
-  text-decoration: none;
+.content__card-link:active {
+  background: #545050;
 }
 
 .content__card-link:hover {
@@ -132,21 +130,15 @@ ol {
   border: 1px solid #fff;
 }
 
-.content__video-card-description-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 200px;
-  padding: 6px 0;
-}
-
 .content__video-card-title {
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
@@ -164,7 +156,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #FFF;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed",;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -181,13 +173,12 @@ ol {
 }
 
 .search-form__textfield:focus {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
+  outline: none;
 }
 
 .title {
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -217,7 +208,7 @@ ol {
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  color: rgba(255, 255, 255, 0.70);
+  color: #fff;
   font-family: "Fira Sans Condensed";
   font-size: 18px;
   font-style: normal;
@@ -246,7 +237,7 @@ ol {
 .button {
   display: flex;
   width: 194px;
-  height: 34px;
+  padding: 6px 0;
   justify-content: center;
   align-items: center;
   color: #FFF;
@@ -269,6 +260,10 @@ ol {
 }
 
 .button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -279,9 +274,10 @@ ol {
 
 .content__card-link {
   display: block;
+  text-decoration: none;
 }
 
-.content__card-link_current {
+ .content__card-link_current {
   background: #545050;
 }
 
