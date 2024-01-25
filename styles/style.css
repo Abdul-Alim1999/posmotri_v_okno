@@ -127,7 +127,7 @@ ol {
   outline: none;
 }
 
-.content__card-link:focus-visible {
+.content__card-link:focus-visible{
   border: 1px solid #fff;
 }
 
