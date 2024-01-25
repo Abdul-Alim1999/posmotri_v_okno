@@ -232,6 +232,14 @@ ol {
   border: 1px solid #fff;
 }
 
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  display: block;
+  background-color: #fff;
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin-top: 1px;
+}
 
 .button {
   display: flex;
