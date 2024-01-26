@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -16,8 +19,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  padding-top: 130px;
-}
+}  
 
 .visually-hidden {
   position: absolute;
@@ -53,7 +55,7 @@ ol {
   justify-content: center;
   align-items: end;
   gap: 30px;
-  padding: 110px 30px;
+  padding: 133px 30px;
 }
 
 .search-form {
@@ -73,9 +75,16 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 34px;
   overflow-y: auto;
   height: 300px;
+}
+
+.content__list-item {
+  margin-bottom: 30px;
+}
+
+.content__list-item:last-child {
+  margin-bottom: 0;
 }
 
 .result {
