@@ -68,7 +68,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  max-width: 399px;
+  width: 399px;
 }
 
 .content__list {
@@ -231,6 +231,7 @@ ol {
 .search-form__pseudo-checkbox {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
@@ -242,7 +243,6 @@ ol {
   content: "";
   width: 15px;
   height: 15px;
-  margin-top: 1px;
 }
 
 .button {
