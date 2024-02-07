@@ -55,13 +55,12 @@ ol {
   justify-content: center;
   align-items: end;
   gap: 30px;
-  padding: 133px 30px;
 }
 
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
 }
 
 .content__details {
@@ -260,6 +259,10 @@ ol {
   background: none;
   border: 1px solid #fff;
   cursor: pointer;
+}
+
+.search-form__submit-button {
+  margin-top: 20px;
 }
 
 .button:active {
